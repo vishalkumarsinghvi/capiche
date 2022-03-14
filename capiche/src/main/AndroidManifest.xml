@@ -3,7 +3,8 @@
 
     <application>
 
-        <activity android:name=".CapicheActivity"/>
+        <activity android:name=".CapicheActivity"
+            android:exported="true"/>
 
     </application>
 

@@ -3,11 +3,10 @@ package com.jianastrero.capichesample
 import android.Manifest
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
+import android.widget.TextView
 import com.jianastrero.capiche.doIHave
 import com.jianastrero.capiche.iNeed
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,10 +17,10 @@ class MainActivity : AppCompatActivity() {
         doIHave(
             Manifest.permission.CAMERA,
             onGranted = {
-                tvCameraStatus.setText(R.string.camera_enabled)
+                findViewById<TextView>(R.id.tvCameraStatus).setText(R.string.camera_enabled)
             },
             onDenied = {
-                tvCameraStatus.setText(R.string.camera_disabled)
+                findViewById<TextView>(R.id.tvCameraStatus).setText(R.string.camera_disabled)
             }
         )
     }
@@ -30,10 +29,10 @@ class MainActivity : AppCompatActivity() {
         iNeed(
             Manifest.permission.CAMERA,
             onGranted = {
-                tvCameraStatus.setText(R.string.camera_enabled)
+                findViewById<TextView>(R.id.tvCameraStatus).setText(R.string.camera_enabled)
             },
             onDenied = {
-                tvCameraStatus.setText(R.string.camera_disabled)
+                findViewById<TextView>(R.id.tvCameraStatus).setText(R.string.camera_disabled)
             }
         )
     }

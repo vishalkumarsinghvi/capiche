@@ -17,7 +17,7 @@ internal class CapicheActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(View(this).also {
-            it.setBackgroundColor(Color.RED)
+            it.setBackgroundColor(Color.TRANSPARENT)
         })
 
         intent.getSerializableExtra(CAPICHE_PARAMS_KEY)?.let {
