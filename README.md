@@ -47,7 +47,7 @@ allprojects {
 ### Step 2. Add the dependency
 ```groovy
 dependencies {
-    implementation 'com.github.jianastrero:capiche:1.0'
+    implementation 'com.github.vishalkumarsinghvi:capiche:2.1'
 }
 ```
 
